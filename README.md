@@ -7,7 +7,7 @@ An Android Application for Mobile Service Shops.
 Requirements
 
    1. Android Version > 5.0
-   2. Manual Permission Required > 6.0 ( For Writing Excel in Internal Storage, accessing Camera and Images from Internal Storage)
+   2. Manual Permission Required > 6.0 ( For Writing Excel in Internal Storage, Accessing Camera and Images from Internal Storage)
    
 ### Description
 
