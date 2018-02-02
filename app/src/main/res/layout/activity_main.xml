@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#F5F5F5"
+        android:orientation="vertical"
+
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/deepPurple4"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:ems="60"
+                android:gravity="center"
+                android:text="Shree Sai Mobiles"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button_view_customers"
+        android:layout_marginTop="141dp"
+        android:background="@color/deepPurple4"
+        android:layout_gravity="center"
+        android:text="@string/add_customer"
+        android:textColor="@color/white" />
+    <!--
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_list_view"
+            android:cacheColorHint="@color/deepPurple1">
+        </ListView>
+    -->
+    <Button
+        android:id="@+id/button_view_customers"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnAdd"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/deepPurple4"
+        android:layout_gravity="center"
+        android:text="@string/view_all_customer"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

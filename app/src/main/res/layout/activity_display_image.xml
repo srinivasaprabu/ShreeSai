@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.prabu.imagestorageandretrieval.view.DisplayImage">
+
+    <ImageView
+        android:id="@+id/display_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/text_view_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#809575CD"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    <TableRow
+        android:id="@+id/table_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/deepPurple4"
+            android:onClick="btnUpdateOnClick"
+            android:text="Update"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_height="50dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/deepPurple4"
+            android:onClick="btnDeleteOnClick"
+            android:text="Delete"
+            android:textColor="@color/white" />
+
+
+    </TableRow>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.prabu.srisai.model.ViewAllCustomer">
+
+
+    <item
+        android:id="@+id/excelgen"
+        android:title="Generate Excel" />
+
+
+</menu>

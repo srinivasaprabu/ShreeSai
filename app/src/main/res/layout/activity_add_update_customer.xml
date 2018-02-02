@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#F5F5F5"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/deepPurple4"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:ems="60"
+                android:gravity="center"
+                android:text="Shree Sai Mobiles"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_name"
+                android:padding="@dimen/view_padding"
+                android:textSize="@dimen/add_edit_textsize" />
+
+            <EditText
+                android:id="@+id/edit_text_mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_mobileno"
+                android:inputType="phone"
+                android:padding="@dimen/view_padding"
+                android:textSize="@dimen/add_edit_textsize" />
+
+            <EditText
+                android:id="@+id/edit_text_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_model"
+                android:padding="@dimen/view_padding"
+                android:textSize="@dimen/add_edit_textsize" />
+
+            <EditText
+                android:id="@+id/edit_text_complaint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_complaint"
+                android:padding="@dimen/view_padding"
+                android:textSize="@dimen/add_edit_textsize" />
+
+            <EditText
+                android:id="@+id/edit_text_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_amount"
+                android:inputType="phone"
+                android:padding="@dimen/view_padding"
+                android:textSize="@dimen/add_edit_textsize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="60">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="23"
+                    android:gravity="center_vertical"
+
+                    android:text="@string/status"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="37"
+                    android:entries="@array/status_arrays"
+
+                    android:textSize="10sp"></Spinner>
+            </LinearLayout>
+            <!--
+                <LinearLayout
+                    android:layout_width="373dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/view_padding"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <EditText
+                        android:id="@+id/edit_text_date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:gravity="left"
+                        android:hint="@string/add_date" />
+
+                    <ImageView
+                        android:id="@+id/image_view_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:src="@android:drawable/ic_menu_my_calendar" />
+                </LinearLayout>
+            -->
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_text_date"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/add_date"></EditText>
+
+                <ImageView
+                    android:id="@+id/image_view_date"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:src="@android:drawable/ic_menu_my_calendar" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_text_imagepath"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/image_path"></EditText>
+
+                <Button
+                    android:id="@+id/Addimg"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:onClick="btnAddOnClick"
+                    android:text="@string/add_image"></Button>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_add_update_customer"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:background="@color/deepPurple4"
+                android:layout_marginTop="@dimen/button_padding"
+                android:text="@string/add_customer"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

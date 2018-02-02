@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">ShreeSai</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_image">Add Image</string>
+    <string name="title_activity_display_image">DisplayImage</string>
+    <string name="image_information">Image Information</string>
+
+
+    <string name="add_customer">Add Customer</string>
+    <string name="update_customer">Update Customer</string>
+    <string name="remove_customer">Remove Customer</string>
+    <string name="view_all_customer">View All Customers</string>
+    <string name="date_picker_title">Start Date</string>
+    <string name="add_amount">Amount</string>
+    <string name="new_customer">New Customer</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="subtitle_format">%1$s crimes</string>
+
+
+    <string name="add_name">Name</string>
+    <string name="add_mobileno">Mobile Number</string>
+    <string name="add_model">Model</string>
+    <string name="add_complaint">Complaint</string>
+    <string name="add_date">Date (DD/MM/YYYY)</string>
+    <string name="add_status">Status</string>
+    <string name="image_path">Image Path</string>
+    <string name="enter_customer_id">Enter Your Customer Id</string>
+    <string name="settings">Settings</string>
+
+
+    <string name="status">Status</string>
+
+    <string-array name="status_arrays">
+        <item>Started</item>
+        <item>Completed</item>
+        <item>Failed</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>

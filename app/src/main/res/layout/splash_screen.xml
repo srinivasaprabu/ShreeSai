@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/author"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azure"
+    android:visibility="visible"
+    tools:context="com.example.prabu.imagestorageandretrieval.SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/LogoImage"
+        android:layout_width="@dimen/logo_size"
+        android:layout_height="@dimen/logo_size"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="logo"
+        android:src="@drawable/logo" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LogoImage"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"></ProgressBar>
+
+</RelativeLayout>
